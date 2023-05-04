@@ -13,7 +13,7 @@ namespace $safeprojectname$
   [RoutePrefix("hcg/v1/pep/[rotaaqui]")]//TODO: Ajustar Rota
   [RMSController("Pep$dominio$ApiServer")]
   [RMSLicense(Sistema = CodSistema.Sau)]
-  [ApiSecurity(CodSistema.Sau, CodigosPermissao.[codigosegurancaoaqui])]//TODO: Criar codigo de segurança
+  [ApiSecurity(CodSistema.Sau, 0)]//TODO: Criar codigo de segurança
   public class Pep$dominio$Controller : RMSController<IPep$dominio$ApiServer>
   {
     [HttpGet]

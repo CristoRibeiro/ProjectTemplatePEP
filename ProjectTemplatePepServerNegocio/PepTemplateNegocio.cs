@@ -1,7 +1,9 @@
-﻿namespace $safeprojectname$.Model
+﻿using System;
+
+namespace $safeprojectname$.Model
 {
   public class Pep$dominio$Negocio
   {
-    public int Codigo { get; set; }
+    $propriedades$
   }
 }

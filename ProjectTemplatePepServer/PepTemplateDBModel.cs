@@ -5,7 +5,6 @@ namespace $safeprojectname$.DBModel
 {
   public class Pep$dominio$DBModel : RMSBaseORMDataModel
   {
-    public int Codigo { get; set; }
-    
+    $propriedades$
   }
 }

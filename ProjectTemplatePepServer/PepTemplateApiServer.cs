@@ -2,7 +2,7 @@
 using RM.Lib;
 using RM.Lib.Server;
 using RM.Pep.Shared.Session;
-using RM.Pep.Extensions
+using RM.Pep.Extensions;
 using $prefixoprojeto$.$dominio$.IService.Interface;
 using $prefixoprojeto$.$dominio$.IService.Model;
 using $safeprojectname$.DI;
@@ -24,10 +24,10 @@ namespace $safeprojectname$
       _servico = Pep$dominio$Configuracao.Configure().Resolve < IPep$dominio$Servico > (DBS);
     }
 
-    public Pep$dominio$UIModel Detalhar(int cod$dominio$)
-    {
+    public Pep$dominio$UIModel Detalhar(int $codigodominio$)
+{
       return _servico
-        .Detalhar(UserServices.Instance.CompanyId, cod$dominio$).ToUIModel();
+        .Detalhar(UserServices.Instance.CompanyId, $codigodominio$).ToUIModel();
     }
 
     public IEnumerable<Pep$dominio$UIModel> Listar$dominio$s(RMSApiQuery apiQuery)
@@ -35,11 +35,11 @@ namespace $safeprojectname$
       return _servico.Listar$dominio$s(UserServices.Instance.CompanyId, apiQuery).ToUIModel();
     }
 
-    public Pep$dominio$UIModel Inserir$dominio$(Pep$dominio$UIModel)
+    public Pep$dominio$UIModel Inserir$dominio$(Pep$dominio$UIModel $instanciadominio$)
     {
       return this.ExecutarMetodoServico(() =>
       {
-        return _servico.Inserir$dominio$(Pep$dominio$UIModel.ToNegocio()).ToUIModel();
+        return _servico.Inserir$dominio$($instanciadominio$.ToNegocio()).ToUIModel();
       });
     }
   }

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="ProjectTemplatePepWizard.650485a2-df50-4014-800d-d0327d48592d" Version="1.0" Language="en-US" Publisher="Cristiano Santos Ribeiro da Silva" />
+        <Identity Id="ProjectTemplatePepWizard.650485a2-df50-4014-800d-d0327d48592d" Version="1.0" Language="en-US" Publisher="Cris" />
         <DisplayName>ProjectTemplatePepWizard</DisplayName>
         <Description xml:space="preserve">Auxilia a criação de projetos do PepRM.
 
@@ -27,10 +27,10 @@ ServerNegocio</Description>
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
         <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%|" AssemblyName="|%CurrentProject%;AssemblyName|" />
+        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplatePepServerNegocio" d:TargetPath="|ProjectTemplatePepServerNegocio;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplatePepApi" d:TargetPath="|ProjectTemplatePepApi;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplatePepIService" d:TargetPath="|ProjectTemplatePepIService;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplatePepServer" d:TargetPath="|ProjectTemplatePepServer;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplatePepServerNegocio" d:TargetPath="|ProjectTemplatePepServerNegocio;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="ProjectTemplatePepTesteUnitario" d:TargetPath="|ProjectTemplatePepTesteUnitario;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
     </Assets>
 </PackageManifest>

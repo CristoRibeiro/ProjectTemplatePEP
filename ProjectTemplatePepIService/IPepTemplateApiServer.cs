@@ -9,6 +9,6 @@ namespace $safeprojectname$.Interface
   public interface IPep$dominio$ApiServer : IRMSServer
   {
     IEnumerable<Pep$dominio$UIModel> Listar$dominio$s(RMSApiQuery apiQuery);
-    Pep$dominio$UIModel Detalhar(int cod$dominio$);
+    Pep$dominio$UIModel Detalhar(int $codigodominio$);
   }
 }

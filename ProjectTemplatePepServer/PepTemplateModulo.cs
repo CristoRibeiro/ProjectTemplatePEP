@@ -27,9 +27,9 @@ namespace $safeprojectname$
       }
     }
 
-    public Pep$dominio$UIModel Detalhar(int cod$dominio$)
-    {
-      return servico.Detalhar(UserServices.Instance.CompanyId, cod$dominio$).ToUIModel();
+    public Pep$dominio$UIModel Detalhar(int $codigodominio$)
+{
+      return servico.Detalhar(UserServices.Instance.CompanyId, $codigodominio$).ToUIModel();
     }
 
     public IEnumerable<Pep$dominio$UIModel> Listar$dominio$s(RMSApiQuery apiQuery)

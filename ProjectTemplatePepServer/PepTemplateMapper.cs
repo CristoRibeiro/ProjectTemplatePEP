@@ -12,14 +12,7 @@ namespace $safeprojectname$.Mapper
     {
       Mapper = new MapperConfiguration(cfg =>
       {
-        cfg.CreateMap<Pep$dominio$DBModel, Pep$dominio$Negocio>()
-          .ForMember(entity => entity.Codigo, map => map.MapFrom(model => model.Codigo))
-          
-          .ReverseMap();
-
-        cfg.CreateMap<Pep$dominio$UIModel, Pep$dominio$Negocio>()
-          .ForMember(entity => entity.Codigo, map => map.MapFrom(model => model.Codigo))
-          .ReverseMap();
+        $mapperclass$
       });
     }
 

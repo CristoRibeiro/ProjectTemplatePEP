@@ -15,7 +15,7 @@ namespace $safeprojectname$
       var objNegocio = TesteUnitarioHelper.PreencherObj<Pep$dominio$Negocio>();
       var objUIModel = objNegocio.ToUIModel();
 
-      Assert.AreEqual(objUIModel.Codigo, objNegocio.Codigo);
+      $validacaoMapeamento$
     }
   }
 }

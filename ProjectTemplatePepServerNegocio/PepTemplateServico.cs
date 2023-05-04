@@ -18,9 +18,9 @@ namespace $safeprojectname$
       return _repositorio.Listar$dominio$s(codColigada, apiQuery);
     }
 
-    public Pep$dominio$Negocio Detalhar(int codColigada, int cod$dominio$)
-    {
-      return _repositorio.Detalhar(codColigada, cod$dominio$);
+    public Pep$dominio$Negocio Detalhar(int codColigada, int $codigodominio$)
+{
+      return _repositorio.Detalhar(codColigada, $codigodominio$);
     }
 
     public Pep$dominio$Negocio Inserir$dominio$(Pep$dominio$Negocio $instanciadominio$Negocio)

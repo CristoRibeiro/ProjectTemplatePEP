@@ -29,11 +29,12 @@ namespace $safeprojectname$
         parameters).ToNegocio();
     }
 
-    public Pep$dominio$Negocio Detalhar(int codColigada, int codChecagemOncologia)
-    {
+    public Pep$dominio$Negocio Detalhar(int codColigada, int $codigodominio$)
+{
       var parameters = new Dictionary<string, object>
       {
-        { "CODIGO", cod$dominio$ }
+        { "$codigodominioDB$", $codigodominio$ }
+        { "CODCOLIGADA", codColigada },
       };
 
       return DBS.Get<Pep$dominio$DBModel>(
@@ -50,7 +51,7 @@ namespace $safeprojectname$
         CodSistema.Sau,
         dbModel.CodColigada,
         mapper.TableName,
-        "SZ$dominio$");
+        "$tabeladominio$");
 
       DBS.Insert(dbModel, mapper);
 

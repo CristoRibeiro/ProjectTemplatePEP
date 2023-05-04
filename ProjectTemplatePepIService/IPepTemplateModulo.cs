@@ -6,7 +6,7 @@ namespace $safeprojectname$.Interface
 {
   public interface IPep$dominio$Modulo : IRMSModule
   {
-    Pep$dominio$UIModel Detalhar(int cod$dominio$);
+    Pep$dominio$UIModel Detalhar(int $codigodominio$);
     IEnumerable<Pep$dominio$UIModel> Listar$dominio$s (RMSApiQuery apiQuery);
   }
 }
